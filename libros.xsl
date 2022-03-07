@@ -10,17 +10,19 @@
 		</html>
 	</xsl:template>
 	<xsl:template match="book">
+		<ul>
 		<h2>
 			OBRA:
 			<xsl:value-of select="title"></xsl:value-of>
 		</h2>
-		<p>Año:
+		<li><p>Año:
 			<xsl:value-of select="year"></xsl:value-of>
-		</p>
-		<p> Precio:
+		</p></li>
+		<li><p> Precio:
 		<span>
 			<xsl:value-of select="price"></xsl:value-of> 
 		</span> euros
-		</p>
+		</p></li>
+		</ul>
 	</xsl:template>
 </xsl:stylesheet>
