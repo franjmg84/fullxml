@@ -1,0 +1,12 @@
+libro {
+	display: block;
+}
+
+p {
+	color: blue;
+}
+
+span {
+	background-color: yellow;
+	font-weight: bold;
+}

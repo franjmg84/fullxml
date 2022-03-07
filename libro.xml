@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="libro.css"?>
+<libros xmlns="http://www.w3.org/1999/xhtml">
+	<libro>
+		<h2>Everyday Italian</h2>
+		<p>2005</p>
+		<span>29.99</span>
+	</libro>
+	<libro>
+		<h2>Harry potter</h2>
+		<p>2005</p>
+		<span>29.99</span>
+	</libro>
+	<libro>
+		<h2>XQuery Kickstart</h2>
+		<p>2003</p>
+		<span>49.99</span>
+	</libro>
+	<libro>
+		<h2>Learning XML (en)</h2>
+		<p>2003</p>
+		<span>39.95</span>
+	</libro>
+</libros>
