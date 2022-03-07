@@ -1,24 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="libro.css"?>
-<libros xmlns="http://www.w3.org/1999/xhtml">
-	<libro>
-		<h2>Everyday Italian</h2>
-		<p>2005</p>
-		<span>29.99</span>
-	</libro>
-	<libro>
-		<h2>Harry potter</h2>
-		<p>2005</p>
-		<span>29.99</span>
-	</libro>
-	<libro>
-		<h2>XQuery Kickstart</h2>
-		<p>2003</p>
-		<span>49.99</span>
-	</libro>
-	<libro>
-		<h2>Learning XML (en)</h2>
-		<p>2003</p>
-		<span>39.95</span>
-	</libro>
-</libros>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="libros.xsl"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libros.xsd">
+    <book category="cooking">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+    <book category="children">
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+    <book category="web">
+        <title lang="en">XQuery Kick Start</title>
+        <author>James McGovern</author>
+        <author>Per Bothner</author>
+        <author>Kurt Cagle</author>
+        <author>James Linn</author>
+        <author>Vaidyanathan Nagarajan</author>
+        <year>2003</year>
+        <price>49.99</price>
+    </book>
+    <book category="web" cover="paperback">
+        <title lang="en">Learning XML</title>
+        <author>Erik T. Ray</author>
+        <year>2003</year>
+        <price>39.95</price>
+    </book>
+</bookstore>

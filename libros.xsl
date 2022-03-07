@@ -1,25 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"  xmlns="http://www.w3.org/1999/xhtml"   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
-		<libros>
-			<xsl:variable name="xmlns" select="'http://www.w3.org/1999/xhtml'"/>
-
-			<xsl:attribute name="xmlns"><xsl:value-of select="$xmlns"/></xsl:attribute>
-			<xsl:for-each select="/libros/libro">
-				<libro>
-					<h2>
-						<xsl:value-of   select="./h2"/>
-					</h2>
-					<xsl:for-each select="./p">
-						<p>
-							<xsl:value-of   select="."/>
-						</p>
-					</xsl:for-each>
-					<span>
-						<xsl:value-of   select="./span"/>
-					</span>
-				</libro>
-			</xsl:for-each>
-		</libros>
+		<html><head>
+		<link rel="stylesheet" type="text/css" href="libros.css" />
+		</head>
+			<body>
+				<xsl:apply-templates/>
+			</body>
+		</html>
+	</xsl:template>
+	<xsl:template match="book">
+		<h2>
+			OBRA:
+			<xsl:value-of select="title"></xsl:value-of>
+		</h2>
+		<p>Año:
+			<xsl:value-of select="year"></xsl:value-of>
+		</p>
+		<p> Precio:
+		<span>
+			<xsl:value-of select="price"></xsl:value-of> 
+		</span> euros
+		</p>
 	</xsl:template>
 </xsl:stylesheet>

@@ -1,12 +1,17 @@
-libro {
-	display: block;
+/*year,price{
+    display: list-item;
+    list-style: disc inside;
+    margin-left: 20px;
 }
+*/
 
-p {
-	color: blue;
+span{
+    display: inline-block;
+    list-style: disc inside;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: gold;
 }
-
-span {
-	background-color: yellow;
-	font-weight: bold;
+p{
+    color: blue;
 }
